@@ -22,14 +22,16 @@
                 app:layout_constraintBottom_toTopOf="@id/addCta"
                 tools:listitem="@layout/item_car_layout" />
 
-            <androidx.appcompat.widget.AppCompatImageButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/addCta"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:src="@android:drawable/ic_menu_add" />
+                app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

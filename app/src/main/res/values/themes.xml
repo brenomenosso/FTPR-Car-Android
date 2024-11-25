@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Base.Theme.MyApiTest" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple500</item>
+        <item name="colorPrimaryVariant">@color/purple700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal200</item>
+        <item name="colorSecondaryVariant">@color/teal700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
 
-    <style name="Theme.MyApiTest" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MyApiTest" parent="Base.Theme.MyApiTest"/>
+
 </resources>

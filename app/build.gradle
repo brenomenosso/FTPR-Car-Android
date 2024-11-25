@@ -2,6 +2,8 @@ plugins {
     id 'kotlin-kapt'
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -51,6 +53,7 @@ android {
     viewBinding {
         enabled = true
     }
+    buildToolsVersion '34.0.0'
 }
 
 kapt {
@@ -90,6 +93,9 @@ dependencies {
 
     // Room
     implementation "androidx.room:room-runtime:2.6.1"
+    implementation 'androidx.activity:activity:1.9.3'
+    implementation 'com.google.firebase:firebase-auth-ktx:23.1.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:21.0.1'
     annotationProcessor "androidx.room:room-compiler:2.6.1"
     kapt "androidx.room:room-compiler:2.6.1"
     implementation "androidx.room:room-ktx:2.6.1"
